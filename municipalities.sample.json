@@ -1,0 +1,144 @@
+[
+  {
+    "id": "antwerpen",
+    "name": "Antwerpen",
+    "province": "Antwerpen",
+    "region": "Vlaanderen",
+    "lat": 51.2194,
+    "lng": 4.4025
+  },
+  {
+    "id": "mechelen",
+    "name": "Mechelen",
+    "province": "Antwerpen",
+    "region": "Vlaanderen",
+    "lat": 51.0257,
+    "lng": 4.4776
+  },
+  {
+    "id": "turnhout",
+    "name": "Turnhout",
+    "province": "Antwerpen",
+    "region": "Vlaanderen",
+    "lat": 51.3226,
+    "lng": 4.9447
+  },
+  {
+    "id": "gent",
+    "name": "Gent",
+    "province": "Oost-Vlaanderen",
+    "region": "Vlaanderen",
+    "lat": 51.0543,
+    "lng": 3.7174
+  },
+  {
+    "id": "aalst",
+    "name": "Aalst",
+    "province": "Oost-Vlaanderen",
+    "region": "Vlaanderen",
+    "lat": 50.9381,
+    "lng": 4.0355
+  },
+  {
+    "id": "brugge",
+    "name": "Brugge",
+    "province": "West-Vlaanderen",
+    "region": "Vlaanderen",
+    "aliases": ["Bruges"],
+    "lat": 51.2093,
+    "lng": 3.2247
+  },
+  {
+    "id": "kortrijk",
+    "name": "Kortrijk",
+    "province": "West-Vlaanderen",
+    "region": "Vlaanderen",
+    "aliases": ["Courtrai"],
+    "lat": 50.8269,
+    "lng": 3.2649
+  },
+  {
+    "id": "leuven",
+    "name": "Leuven",
+    "province": "Vlaams-Brabant",
+    "region": "Vlaanderen",
+    "lat": 50.8798,
+    "lng": 4.7005
+  },
+  {
+    "id": "hasselt",
+    "name": "Hasselt",
+    "province": "Limburg",
+    "region": "Vlaanderen",
+    "lat": 50.9307,
+    "lng": 5.3325
+  },
+  {
+    "id": "genk",
+    "name": "Genk",
+    "province": "Limburg",
+    "region": "Vlaanderen",
+    "lat": 50.965,
+    "lng": 5.5002
+  },
+  {
+    "id": "brussel",
+    "name": "Brussel",
+    "province": "Brussels Hoofdstedelijk Gewest",
+    "region": "Brussels Hoofdstedelijk Gewest",
+    "aliases": ["Bruxelles", "Brussels"],
+    "lat": 50.8503,
+    "lng": 4.3517
+  },
+  {
+    "id": "schaarbeek",
+    "name": "Schaarbeek",
+    "province": "Brussels Hoofdstedelijk Gewest",
+    "region": "Brussels Hoofdstedelijk Gewest",
+    "lat": 50.8676,
+    "lng": 4.3774
+  },
+  {
+    "id": "liege",
+    "name": "Liège",
+    "province": "Liège",
+    "region": "Wallonië",
+    "aliases": ["Liege", "Luik"],
+    "lat": 50.6326,
+    "lng": 5.5797
+  },
+  {
+    "id": "charleroi",
+    "name": "Charleroi",
+    "province": "Hainaut",
+    "region": "Wallonië",
+    "lat": 50.4108,
+    "lng": 4.4446
+  },
+  {
+    "id": "mons",
+    "name": "Mons",
+    "province": "Hainaut",
+    "region": "Wallonië",
+    "aliases": ["Bergen"],
+    "lat": 50.4542,
+    "lng": 3.9523
+  },
+  {
+    "id": "namur",
+    "name": "Namur",
+    "province": "Namur",
+    "region": "Wallonië",
+    "aliases": ["Namen"],
+    "lat": 50.4674,
+    "lng": 4.8718
+  },
+  {
+    "id": "arlon",
+    "name": "Arlon",
+    "province": "Luxembourg",
+    "region": "Wallonië",
+    "lat": 49.6836,
+    "lng": 5.8167
+  }
+]
