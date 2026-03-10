@@ -2,7 +2,7 @@ name: Update faillissementen data
 
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "0 2 * * *" # daily 02:00 UTC
   workflow_dispatch: {}
 
 permissions:
@@ -15,17 +15,21 @@ jobs:
   fetch-and-commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Fetch via Staatsbladmonitor
-        working-directory: ./faillissementen-kaart-be
+      - name: Download VAT-lijst uit KBO daily
+        run: |
+          python3 scripts/fetch_kbo_daily_vats.py
+
+      - name: Fetch faillissementen via Staatsbladmonitor
         env:
           SBM_APIKEY: ${{ secrets.SBM_APIKEY }}
-          SBM_ACCOUNTID: ${{ env.SBM_ACCOUNTID }}
         run: |
           if [ -z "$SBM_APIKEY" ]; then
             echo "SBM_APIKEY secret ontbreekt; stop."
@@ -38,7 +42,6 @@ jobs:
             --output data/faillissementen.json
 
       - name: Commit updated data
-        working-directory: ./faillissementen-kaart-be
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
